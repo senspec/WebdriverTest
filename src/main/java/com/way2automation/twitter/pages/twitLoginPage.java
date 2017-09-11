@@ -38,7 +38,7 @@ public class twitLoginPage {
 	//Business Login
 	public twitLandingPage doLogin(String myusername, String mypassword) throws InterruptedException {
 		
-		System.out.println("Senthil Start Login");
+		System.out.println("Senthil Start Login/Landing");
 		username.sendKeys(myusername);
 		new WebDriverWait(driver, 30).until(ExpectedConditions.visibilityOfElementLocated(By.xpath(".//*[@id='page-container']/div/div[1]/form/fieldset/div[2]/input")));
 		password.sendKeys(mypassword);
