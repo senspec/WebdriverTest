@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Facebook Suite]">
+  <listeners>
+    <listener class-name="ErrorCollectors.TestListenerAdapter"/>
+  </listeners>
+  <test name="Login test(failed)">
+    <classes>
+      <class name="com.way2automation.twitter.testcases.LoginTest">
+        <methods>
+          <include name="init"/>
+          <include name="sampleTest"/>
+        </methods>
+      </class> <!-- com.way2automation.twitter.testcases.LoginTest -->
+    </classes>
+  </test> <!-- Login test(failed) -->
+</suite> <!-- Failed suite [Facebook Suite] -->
