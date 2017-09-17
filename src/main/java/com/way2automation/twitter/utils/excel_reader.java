@@ -11,14 +11,15 @@ import org.apache.poi.ss.usermodel.CellStyle;
 
 import org.apache.poi.ss.usermodel.IndexedColors;
 import org.apache.poi.xssf.usermodel.*;
-
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.io.*;
 import java.util.Calendar;
 
 
 public class excel_reader {
-	
+	private static final Logger log = LogManager.getLogger(excel_reader.class.getName());
 	public  String path;
 	public  FileInputStream fis = null;
 	public  FileOutputStream fileOut =null;
@@ -37,8 +38,8 @@ public class excel_reader {
 			fis.close();
 		} catch (Exception e) {
 			
-			//logger.error("Sorry, something wrong!", e);
-			e.printStackTrace();
+			log.error("Sorry, something wrong!", e);
+			//e.printStackTrace();
 		} 
 		
 	}
